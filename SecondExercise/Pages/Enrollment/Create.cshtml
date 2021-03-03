@@ -1,0 +1,17 @@
+﻿
+@page
+@model SecondExercise.Pages.Enrollment.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+<form method="post">
+    <div asp-validation-summary="All" style="color:red"></div>
+    <input asp-for="Person.Name" placeholder="Name" />
+    <input asp-for="Person.Address" placeholder="Address" />
+    <input asp-for="Person.Zipcode" placeholder="Zip Code" />
+    <input asp-for="Person.Age" placeholder="Age" />
+    <input asp-for="Person.Pob" placeholder="Place of Birth" />
+    <input asp-for="Person.Contact" placeholder="Contact Number" />
+    <input asp-for="Person.Email" placeholder="Email Address" />
+    <button type="submit">Submit</button>
+</form>
